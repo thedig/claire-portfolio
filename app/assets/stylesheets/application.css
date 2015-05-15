@@ -13,3 +13,80 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+  font-family: "Futura";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.leaders * {
+  font-family: "Minion Pro";
+}
+#container {
+  margin: auto;
+  max-width: 36em;
+  min-width: 20em;
+}
+
+#page-number {
+  float: left;
+}
+#title {
+  float: right;
+  text-transform: uppercase;
+}
+#section-title {
+  clear: both;
+  text-align: center;
+}
+
+ol.dichotomous-key {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+ul.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . "
+             ". . . . . . . . . . . . . . . . . . . . "
+             ". . . . . . . . . . . . . . . . . . . . "
+             ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white
+}
+
+ul.leaders > li > span.value {
+  font-variant: small-caps;
+}
+
+.description {
+  display: flex;
+}
+.description-text {
+  font-size: 75%;
+  line-height: 2.0;
+  font-style: italic;
+  text-align: right;
+}
+.description-image {
+  flex-shrink: 0;
+  width: 350px;
+  margin-left: 1em;
+}
+.description-image img {
+  max-width: 100%;
+}
